@@ -1,11 +1,11 @@
 server:
-    host: "0.0.0.0"
+    host: "127.0.0.1"
     port: 8080
     # When set to true, allows cookies to be sent over non-HTTPS connections.
     # WARNING: Only enable this in trusted environments like a homelab
     # where HTTPS is not available. This reduces security by allowing
     # cookies to be transmitted in plain text.
-    allow_insecure_cookies: false
+    allow_insecure_cookies: true
     # Enable native TLS. When true, application will run over HTTPS using the
     # supplied certificate and key paths.
     ssl: false
@@ -14,10 +14,10 @@ server:
 wiki:
     root_dir: "data"
     documents_dir: "documents"
-    title: "📚 Wiki-Go"
+    title: "CODEZPC WIKI"
     owner: "wiki.example.com"
     notice: "Copyright 2025 © All rights reserved."
-    timezone: "America/Vancouver"
+    timezone: "Asia/Shanghai"
     private: false
     disable_comments: false
     disable_file_upload_checking: false
@@ -28,11 +28,11 @@ wiki:
     # Maximum file upload size in MB
     max_upload_size: 10
     # Default language for the wiki interface (en, es, etc.)
-    language: "en"
+    language: "zh-CN"
 security:
     login_ban:
         # Enable protection against brute force login attacks
-        enabled: true
+        enabled: false
         # Number of failed attempts before triggering a ban
         max_failures: 5
         # Time window in seconds for counting failures
@@ -42,6 +42,6 @@ security:
         # Maximum ban duration in seconds (24 hours)
         max_ban_seconds: 86400
 users:
-    - username: admin
-      password: $2a$10$9Ve5r5Bg0anasHwjQDhE..wWWMqomqAMCV5XkaUwN3yIn7YC4RxoS
+    - username: codezpc
+      password: $2a$10$sE85xcEjVZW1o07aZIKXjusHOLK1iauq7pplYA2U83SB0aA0ex0pi
       role: admin

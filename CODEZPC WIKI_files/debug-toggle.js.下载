@@ -1,1 +1,0 @@
-const DEBUG_MODE=false;if(!DEBUG_MODE){window._originalConsole=window.console;window.console={log:function(){},error:function(){},warn:function(){},info:function(){},debug:function(){}}}

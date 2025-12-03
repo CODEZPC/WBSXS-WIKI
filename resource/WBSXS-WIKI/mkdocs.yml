@@ -1,0 +1,78 @@
+site_name: 《我不是戏神》 WIKI
+site_description: 《我不是戏神》 信息汇总 WIKI站
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+  palette:
+    # 亮色模式配置
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: "切换为深色"
+    # 暗色模式配置
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: "切换为浅色"
+
+# 插件配置
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+  - awesome-pages
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+          separator: "-"
+
+# 导航菜单
+nav:
+  - 首页: documents/index.md
+  - 神道与技能:
+    - 概述: documents/神道/intro.md
+    - 书神道: documents/神道/书.md
+    - 医神道: documents/神道/医.md
+    - 兵神道: documents/神道/兵.md
+    - 黄神道: documents/神道/黄.md
+    - 青神道: documents/神道/青.md
+    - 巧神道: documents/神道/巧.md
+    - 弈神道: documents/神道/弈.md
+    - 戏神道: documents/神道/戏.md
+    - 偶神道: documents/神道/偶.md
+    - 巫神道: documents/神道/巫.md
+    - 力神道: documents/神道/力.md
+    - 卜神道: documents/神道/卜.md
+    - 盗神道: documents/神道/盗.md
+    - 娼神道: documents/神道/娼.md
+    - 帝神道: documents/神道/帝.md
+    - 鬼神道: documents/神道/鬼.md
+    - 天神道: documents/神道/天.md
+    - 邪神道: documents/神道/邪.md
+  - 人物一览:
+    - 前言: documents/人物/intro.md
+    - 黄昏社:
+      - 概览: documents/人物/黄昏社/概览.md
+      - 末角: documents/人物/黄昏社/末角.md
+
+# 额外配置
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CODEZPC

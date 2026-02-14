@@ -4,9 +4,6 @@ on:
     # Set the schedule time
     - cron: '0 9 * * *'
   workflow_dispatch:
-    inputs:
-      参数名:
-        description: 参数描述
 
 jobs:
   check-and-submit:
@@ -16,4 +13,5 @@ jobs:
         uses: bojieyang/indexnow-action@v2
         with:
           sitemap-location: 'https://codezpc.github.io/WBSXS-WIKI/sitemap.xml'
+          key-location: ${{ secrets.INDEXNOW_KEY_LOCATION }}
           key: ${{ secrets.INDEXNOW_KEY }}

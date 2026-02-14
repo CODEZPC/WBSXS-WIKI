@@ -3,6 +3,10 @@ on:
   schedule:
     # Set the schedule time
     - cron: '0 9 * * *'
+  workflow_dispatch:
+    inputs:
+      参数名:
+        description: 参数描述
 
 jobs:
   check-and-submit:

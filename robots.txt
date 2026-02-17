@@ -1,13 +1,2 @@
 User-agent: *
-Disallow: /d308a5988a974d8ab30e9128f1054623.txt
-
-User-agent: *
-Disallow: /search/
-
-User-agent: *
-Disallow: /stylesheets/
-
-User-agent: *
-Disallow: /.github/
-
-Sitemap: https://codezpc.github.io/WBSXS-WIKI/sitemap.xml
+Disallow:

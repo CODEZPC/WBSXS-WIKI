@@ -1,2 +1,10 @@
+Sitemap: https://codezpc.github.io/WBSXS-WIKI/sitemap.xml
+
 User-agent: *
-Disallow:
+Disallow: /d308a5988a974d8ab30e9128f1054623.txt
+
+User-agent: *
+Disallow: /.github/
+
+User-agent: *
+Disallow: /stylesheets/
